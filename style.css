@@ -1,0 +1,316 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+}
+
+
+
+.col-2 img{
+    border-radius: 20px;
+}
+
+
+p{
+    color: #555;
+}
+
+
+
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+    
+}
+
+
+.col-2 img{
+    max-width: 100%;
+    padding: 50px 0;
+}
+
+.col-2 h1{
+    font-size: 30px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+
+.col-2 h1:nth-child(3){
+    color: #3A4980;
+}
+
+.btn{
+    display: inline-block;
+    background: #ff523b;
+    color: white;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+
+.btn:hover{
+    background: #563434;
+}
+
+
+
+
+.color-section {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4,50px);
+    grid-gap: 5px;
+    margin-right: 5px;
+}
+
+/* Define your colors for each section */
+.section1 {
+    background-color: #ECDECC; /* Red */
+    width: 50px;
+    height: 50px;
+}
+
+.section2 {
+    background-color: #BBD278; /* Green */
+    width: 50px;
+    height: 50px;
+}
+
+.section3 {
+    background-color: #BBC1F8; /* Blue */
+    width: 50px;
+    height: 50px;
+}
+
+.section4 {
+    background-color: #FFD3F8; /* Blue */
+    width: 50px;
+    height: 50px;
+}
+
+
+
+
+
+
+
+
+.inside {
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+}
+
+.counter-container {
+    display: flex;
+    margin-right: 10px; /* Adjust the margin between the counter and the "Add to cart" button */
+}
+
+button {
+    padding: 8px 12px; /* Adjust padding as needed */
+    font-size: 14px; /* Adjust font size as needed */
+    margin: 0; /* Remove default margin to align buttons properly */
+}
+
+#count {
+    margin: 0 8px; /* Adjust margin between buttons and count */
+    font-size: 16px; /* Adjust font size as needed */
+    color: black;
+    padding-top:-50px ;
+}
+
+
+
+
+input[type="radio"] {
+    transform: scale(0.5); 
+}
+
+.radio-buttons {
+    display: flex;
+}
+
+.size-label {
+    margin-right: 5px;
+    padding: 5px; 
+    background-color: #F3F3F3;
+    border-radius: 5px;
+    font-size: 14px; /* Adjust the font size to decrease the text size */
+}
+
+.size-label input {
+    margin-right: 5px;
+}
+
+
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left:25px;
+    padding-right: 25px;
+}
+
+
+
+.discount {
+    color: #e74c3c; /* Set the color of the discount text */
+    font-size: 18px; /* Adjust the font size of the discount text */
+    margin-left: 10px; /* Adjust the margin to separate the discount text from the price */
+    font-weight: bold; /* Optional: Add bold font weight for emphasis */
+}
+
+
+
+
+h4{
+    color: #555;
+    font-weight: normal;
+}
+
+
+
+/* ----Single Product details---- */
+
+.single-product{
+    margin-top: 80px;
+}
+
+.single-product .col-2 img{
+    padding: 0;
+
+}
+
+.single-product .col-2{
+    padding: 20px;
+}
+
+.single-product h4{
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.single-product select{
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.single-product input{
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    border: 1px solid #ff523b;
+}
+
+.cart-info p{
+    display: none;
+}
+
+input:focus{
+    outline: none;
+}
+
+
+.single-product .fa{
+    color: #ff523b;
+    margin-left: 10px;
+}
+
+.small-img-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+
+}
+
+
+
+
+span{
+    color: white;
+}
+
+
+
+.col-about {
+    flex-basis: 40%;
+}
+
+
+.col-image{
+    flex-basis: 20%;
+
+    width: 300px;
+    height: 200px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    
+    padding: 20px;
+    margin-bottom: 50px;
+    font-weight: 300;
+}
+
+.col-image p{
+font-size: larger;}
+
+
+
+
+.btn {
+    width:40%;
+    height: 45px;
+    background:#3A4980;
+    border: none;
+    outline: none;
+    border-radius: 60px;
+    cursor: pointer;
+    font-size: 1em;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+}
+
+
+
+
+
+@media only screen and (max-width: 600px ) 
+{
+    .row{
+        text-align: center;
+    }
+
+    .col-2, .col-3 ,.col-4{
+        flex-basis: 100%;
+    }
+
+    .single-product .row{
+        text-align: left;
+    }
+    .single-product .col-2{
+        padding: 20px 0;
+    }
+}
+
